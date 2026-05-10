@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual Environment
+venv/
+env/
+
+# Dataset Files
+*.csv
+*.xlsx
+*.xls
+*.zip
+*.tar.gz
+
+# Large Raw Data
+/data/raw/
+/data/external/
+
+# Environment Variables
+.env
+
+# Model Files
+*.pkl
+*.joblib
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Power BI / Tableau Temporary
+*.tmp
+*.log
