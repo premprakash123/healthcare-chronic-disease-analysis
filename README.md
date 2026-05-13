@@ -428,27 +428,169 @@ The cleaned dataset was validated to ensure:
 
 ---
 
+# 📅 Day 4 — Exploratory Data Analysis (EDA)
+
+## 🎯 Objective
+
+The objective of Day 4 was to perform Exploratory Data Analysis (EDA) on the cleaned Chronic Kidney Disease (CKD) dataset in order to identify important healthcare patterns, biomarker relationships, feature distributions, and potential risk indicators before machine learning preparation.
+
+---
+
+# 🛠️ Tasks Completed
+
+✅ Loaded cleaned healthcare dataset  
+✅ Performed statistical dataset overview  
+✅ Analyzed CKD target variable distribution  
+✅ Visualized numerical feature distributions  
+✅ Conducted outlier inspection using boxplots  
+✅ Generated healthcare biomarker correlation heatmap  
+✅ Compared healthy vs diseased patient groups  
+✅ Documented key healthcare insights  
+
+---
+
+# 📂 Dataset Used
+
+```text
+data/processed/ckd_cleaned.csv
+```
+
+The cleaned dataset generated during Day 3 preprocessing was used for exploratory analysis.
+
+---
+
+# 📊 Dataset Overview
+
+The following inspections were performed:
+
+- Dataset shape analysis
+- Data type verification
+- Descriptive statistics
+- Numerical feature summaries
+- Categorical feature assessment
+
+---
+
+# 🧠 Target Variable Analysis
+
+The CKD target variable distribution was analyzed to understand the balance between:
+
+- CKD Positive Patients
+- CKD Negative Patients
+
+A countplot visualization was generated to inspect disease prevalence within the dataset.
+
+---
+
+# 📈 Feature Distribution Analysis
+
+Histogram visualizations were created to analyze the distribution of healthcare biomarkers such as:
+
+- Blood Pressure
+- Hemoglobin
+- Serum Creatinine
+- Blood Glucose
+- Sodium
+- Potassium
+
+This analysis helped identify:
+
+✅ Skewed distributions  
+✅ Feature spread  
+✅ Abnormal clinical ranges  
+✅ Potential outliers  
+
+---
+
+# 📦 Outlier Inspection
+
+Boxplots were generated for numerical healthcare features to inspect the presence of extreme biomarker values.
+
+### Key Observation
+
+Healthcare datasets naturally contain abnormal biomarker measurements due to clinical conditions. Outlier inspection was performed to understand data variability before machine learning modeling.
+
+---
+
+# 🔥 Correlation Analysis
+
+A healthcare biomarker correlation heatmap was generated to identify relationships between medical variables.
+
+## Important Note
+
+A temporary encoded copy of the dataset was created because correlation matrices require numerical feature representations.
+
+The original healthcare dataset remained unchanged during this process.
+
+---
+
+# 🔍 Disease vs Healthy Patient Analysis
+
+Comparative visualizations were created between:
+
+- CKD Positive Patients
+- Healthy Patients
+
+This helped identify biomarkers strongly associated with chronic kidney disease risk.
+
+Example analyses included:
+
+- Hemoglobin distribution
+- Serum creatinine comparison
+- Blood pressure variation
+
+---
+
+# 📌 Key EDA Findings
+
+### Observed Insights
+
+- CKD patients generally showed abnormal biomarker distributions
+- Serum creatinine exhibited strong disease association
+- Hemoglobin levels were comparatively lower in CKD-positive patients
+- Several healthcare features displayed visible correlations
+- Outliers were present across multiple medical attributes
+
+---
+
+# 📊 Visualizations Generated
+
+The following visualizations were created:
+
+✅ Histograms  
+✅ Countplots  
+✅ Boxplots  
+✅ Correlation Heatmaps  
+✅ Disease Comparison Plots  
+✅ Distribution Analysis Charts  
+
+---
+
+# 💻 Technologies Used
+
+- Python
+- Pandas
+- Matplotlib
+- Seaborn
+
+---
+
 # 🚀 Next Steps
 
-Day 4 will focus on:
+The next phase will focus on:
 
-- Feature transformation
-- Label encoding
-- Standardization
-- Outlier inspection
-- Final preprocessing optimization
+- Label Encoding
+- Feature Standardization
+- Feature Engineering
+- SMOTE for class balancing
+- ML-ready dataset preparation
 
 ---
 
 # 🔐 Professional Notes
 
-- Healthcare preprocessing decisions are documented for transparency
-- Notebook workflow remains reproducible
-- Semantic Git commits are maintained daily
-- Medical data handling follows ethical preprocessing practices
-
-
-# 👨‍💻 Author
-
-**Prem**  
-Aspiring Data Analyst & Machine Learning Enthusiast
+- EDA was performed on a cleaned and validated healthcare dataset
+- Original medical data integrity was preserved
+- Temporary encoding was used only for correlation analysis
+- Visual analysis was documented for reproducibility
+- Professional notebook structure and semantic Git commits were maintained throughout the workflow
