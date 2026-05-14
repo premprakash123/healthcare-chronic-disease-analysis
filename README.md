@@ -575,22 +575,200 @@ The following visualizations were created:
 
 ---
 
+# 📅 Day 5 — Advanced Exploratory Data Analysis (Advanced EDA)
+
+## 🎯 Objective
+
+The objective of Day 5 was to perform advanced exploratory analysis on the Chronic Kidney Disease (CKD) dataset in order to identify deeper clinical relationships, biomarker distributions, disease patterns, and patient risk indicators before feature engineering and machine learning preparation.
+
+---
+
+# 🛠️ Tasks Completed
+
+✅ Performed advanced disease vs healthy patient comparison  
+✅ Analyzed serum creatinine distributions  
+✅ Investigated blood pressure variations across CKD classes  
+✅ Examined blood glucose biomarker behavior  
+✅ Generated KDE distribution visualizations  
+✅ Created violin plots for biomarker density analysis  
+✅ Exported important healthcare EDA visualizations  
+✅ Identified and corrected inconsistent target labels  
+✅ Documented clinical observations and statistical insights  
+
+---
+
+# 📂 Dataset Used
+
+```text
+data/processed/ckd_cleaned.csv
+```
+
+The cleaned healthcare dataset generated from preprocessing workflows was used for advanced exploratory analysis.
+
+---
+
+# 🔍 Disease vs Healthy Patient Analysis
+
+Comparative visual analysis was performed between:
+
+- CKD Positive Patients
+- Healthy Patients
+
+The objective was to identify biomarkers strongly associated with chronic kidney disease risk.
+
+---
+
+# 🧪 Serum Creatinine Analysis
+
+Serum creatinine distributions were analyzed using:
+
+- Boxplots
+- Violin plots
+
+### Key Observation
+
+CKD-positive patients exhibited significantly elevated serum creatinine levels, indicating strong association with kidney dysfunction.
+
+Extreme outlier values were observed in severe CKD cases, requiring adjusted visualization scaling for improved readability.
+
+---
+
+# ❤️ Blood Pressure Analysis
+
+Blood pressure distributions were compared across disease groups.
+
+### Observation
+
+Patients diagnosed with CKD demonstrated comparatively higher blood pressure variability than healthy patients, indicating moderate clinical association with kidney disease progression.
+
+---
+
+# 🍬 Blood Glucose Analysis
+
+Random blood glucose distributions were explored across patient categories.
+
+### Observation
+
+Blood glucose measurements displayed variability between healthy and diseased cohorts, suggesting possible metabolic relationships within the dataset.
+
+---
+
+# 📈 KDE Distribution Analysis
+
+Kernel Density Estimation (KDE) plots were generated for important biomarkers such as hemoglobin.
+
+### Purpose
+
+KDE visualizations provided smoother probability density analysis and improved understanding of feature distributions across CKD classes.
+
+---
+
+# 🎻 Violin Plot Analysis
+
+Violin plots were used to inspect healthcare biomarker density and spread.
+
+### Benefits
+
+These visualizations combined:
+
+- Distribution analysis
+- Density estimation
+- Median behavior
+- Outlier visibility
+
+This improved clinical interpretability of patient biomarker behavior.
+
+---
+
+# ⚠️ Outlier Analysis
+
+Advanced outlier inspection revealed the presence of extreme clinical biomarker values among CKD-positive patients.
+
+### Important Observation
+
+Healthcare datasets naturally contain abnormal clinical measurements due to disease severity and patient variability.
+
+Visualization scaling techniques were applied to improve graph readability while preserving clinical information.
+
+---
+
+# 🧹 Target Variable Correction
+
+During EDA, an inconsistent target label (`no`) was identified in the dataset.
+
+The CKD target variable was standardized to maintain only valid classes:
+
+```text
+ckd
+notckd
+```
+
+This ensured consistent downstream machine learning preparation.
+
+---
+
+# 📊 Visualizations Generated
+
+The following professional healthcare EDA visualizations were generated and exported:
+
+✅ CKD Class Distribution  
+✅ Hemoglobin Distribution  
+✅ Serum Creatinine Distribution  
+✅ Blood Pressure Distribution  
+✅ Hemoglobin KDE Plot  
+✅ Healthcare Outlier Boxplots  
+✅ Biomarker Pairplots  
+
+---
+
+# 📁 Visualization Export Directory
+
+```text
+visuals/plots/
+```
+
+Important visualization assets were exported for reporting, dashboard development, and final project documentation.
+
+---
+
+# 📌 Key Clinical Insights
+
+### Observed Findings
+
+- CKD-positive patients showed elevated serum creatinine levels
+- Hemoglobin distributions differed significantly across patient groups
+- Blood pressure variability was higher among diseased patients
+- Multiple healthcare biomarkers displayed strong disease association
+- Outliers were clinically meaningful and expected within healthcare datasets
+- Target label inconsistencies were successfully identified during exploratory analysis
+
+---
+
+# 💻 Technologies Used
+
+- Python
+- Pandas
+- Matplotlib
+- Seaborn
+
+---
+
 # 🚀 Next Steps
 
-The next phase will focus on:
+The next project phase will focus on:
 
 - Label Encoding
 - Feature Standardization
 - Feature Engineering
-- SMOTE for class balancing
+- SMOTE-based class balancing
 - ML-ready dataset preparation
 
 ---
 
 # 🔐 Professional Notes
 
-- EDA was performed on a cleaned and validated healthcare dataset
-- Original medical data integrity was preserved
-- Temporary encoding was used only for correlation analysis
-- Visual analysis was documented for reproducibility
-- Professional notebook structure and semantic Git commits were maintained throughout the workflow
+- Original healthcare dataset integrity was preserved throughout analysis
+- Temporary encoded datasets were used only for correlation analysis
+- Visualizations were exported using structured directory management
+- Notebook workflow remains fully reproducible
+- Semantic Git commits and professional documentation practices were maintained consistently
