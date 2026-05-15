@@ -753,22 +753,150 @@ Important visualization assets were exported for reporting, dashboard developmen
 
 ---
 
+# 📅 Day 6 — Feature Engineering & Categorical Encoding
+
+## 🎯 Objective
+
+The objective of Day 6 was to initiate the feature engineering workflow by transforming the cleaned healthcare dataset into a machine learning compatible format through categorical encoding and dataset validation.
+
+This phase focused on preparing the Chronic Kidney Disease (CKD) dataset for downstream machine learning preprocessing and predictive modeling.
+
+---
+
+# 🛠️ Tasks Completed
+
+✅ Loaded cleaned healthcare dataset  
+✅ Performed dataset validation checks  
+✅ Verified missing values and data types  
+✅ Standardized column formatting  
+✅ Identified categorical healthcare features  
+✅ Applied Label Encoding to categorical variables  
+✅ Validated encoded dataset structure  
+✅ Exported encoded healthcare dataset  
+
+---
+
+# 📂 Dataset Used
+
+```text
+data/processed/ckd_cleaned.csv
+```
+
+The cleaned dataset generated from previous preprocessing and EDA workflows was used as the foundation for feature engineering.
+
+---
+
+# 🔍 Dataset Validation
+
+Before transformation, the following validation checks were performed:
+
+- Dataset shape verification
+- Missing value assessment
+- Data type inspection
+- Column consistency validation
+
+These checks ensured that the dataset remained clean and stable before machine learning preparation.
+
+---
+
+# 🧹 Column Standardization
+
+Hidden spaces and formatting inconsistencies were removed from column names to maintain:
+
+✅ Clean feature naming  
+✅ Consistent preprocessing workflow  
+✅ Reliable downstream feature referencing  
+
+---
+
+# 🧩 Categorical Feature Identification
+
+Categorical healthcare variables were identified using datatype inspection.
+
+Examples of categorical features included:
+
+- Red Blood Cells
+- Pus Cell
+- Hypertension
+- Diabetes Mellitus
+- Appetite
+- Anemia
+
+These features required numerical conversion before machine learning implementation.
+
+---
+
+# 🔄 Label Encoding
+
+Machine learning algorithms require numerical feature representations. Therefore, categorical healthcare variables were transformed into numerical labels using Label Encoding.
+
+### Example Transformations
+
+```text
+yes → 1
+no → 0
+
+present → 1
+notpresent → 0
+```
+
+---
+
+# 📌 Encoding Rationale
+
+Label Encoding was selected because:
+
+- The dataset contains multiple binary healthcare variables
+- Machine learning models cannot process string values directly
+- Numerical encoding improves compatibility with predictive algorithms
+
+---
+
+# 📊 Encoded Dataset Validation
+
+After encoding, the transformed dataset was validated to ensure:
+
+✅ Successful numerical conversion  
+✅ No unexpected categorical remnants  
+✅ Stable dataset structure  
+✅ Machine learning compatibility  
+
+---
+
+# 📁 Output Files Generated
+
+```text
+data/processed/ckd_encoded.csv
+```
+
+The encoded dataset was exported for the next preprocessing phase involving feature standardization and scaling.
+
+---
+
+# 💻 Technologies Used
+
+- Python
+- Pandas
+- Scikit-Learn
+
+---
+
 # 🚀 Next Steps
 
-The next project phase will focus on:
+The next phase will focus on:
 
-- Label Encoding
 - Feature Standardization
-- Feature Engineering
-- SMOTE-based class balancing
+- Numerical Scaling
+- Feature Distribution Analysis
+- Correlation Validation
 - ML-ready dataset preparation
 
 ---
 
 # 🔐 Professional Notes
 
-- Original healthcare dataset integrity was preserved throughout analysis
-- Temporary encoded datasets were used only for correlation analysis
-- Visualizations were exported using structured directory management
-- Notebook workflow remains fully reproducible
-- Semantic Git commits and professional documentation practices were maintained consistently
+- Original healthcare dataset integrity was preserved throughout encoding
+- Feature engineering steps were documented for reproducibility
+- Semantic Git commits were maintained consistently
+- The notebook workflow follows enterprise-grade preprocessing standards
+- Encoded datasets were exported separately to preserve preprocessing stages
