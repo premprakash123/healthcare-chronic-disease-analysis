@@ -880,23 +880,156 @@ The encoded dataset was exported for the next preprocessing phase involving feat
 - Scikit-Learn
 
 ---
+# 📅 Day 7 — Feature Standardization & Scaled Dataset Preparation
+
+## 🎯 Objective
+
+The objective of Day 7 was to standardize healthcare biomarker features and prepare a numerically balanced dataset suitable for machine learning model training.
+
+This phase focused on scaling healthcare variables to ensure stable model convergence, improved feature comparability, and optimized machine learning performance.
+
+---
+
+# 🛠️ Tasks Completed
+
+✅ Loaded encoded healthcare dataset  
+✅ Separated feature variables and target label  
+✅ Applied StandardScaler to numerical features  
+✅ Standardized healthcare biomarker distributions  
+✅ Validated scaled feature outputs  
+✅ Analyzed feature distributions after scaling  
+✅ Generated scaled feature correlation analysis  
+✅ Exported standardized healthcare dataset  
+
+---
+
+# 📂 Dataset Used
+
+```text
+data/processed/ckd_encoded.csv
+```
+
+The encoded healthcare dataset generated during Day 6 was used for feature standardization and scaling workflows.
+
+---
+
+# 🔍 Dataset Preparation
+
+Before scaling, the dataset was divided into:
+
+- Feature Variables (`X`)
+- Target Variable (`y`)
+
+This separation ensured that only input features were standardized while preserving the original target labels.
+
+---
+
+# 📏 Feature Standardization
+
+Healthcare biomarkers naturally operate on different numerical scales.
+
+### Example
+
+```text
+Blood Pressure → 80–180
+Hemoglobin → 10–20
+White Blood Cell Count → Thousands
+```
+
+Without scaling, machine learning algorithms may assign disproportionate importance to larger numerical features.
+
+---
+
+# ⚙️ StandardScaler Implementation
+
+The `StandardScaler` technique from Scikit-Learn was used to normalize feature distributions.
+
+### Standardization Formula
+
+
+::contentReference[oaicite:0]{index=0}
+
+
+Where:
+
+- \(x\) = original feature value
+- \(\mu\) = feature mean
+- \(\sigma\) = feature standard deviation
+
+---
+
+# 📌 Standardization Benefits
+
+Feature scaling improves:
+
+✅ Model convergence speed  
+✅ Numerical stability  
+✅ Feature comparability  
+✅ Predictive consistency  
+✅ Optimization efficiency  
+
+---
+
+# 📊 Scaled Feature Analysis
+
+After standardization, feature distributions were inspected using:
+
+- Histograms
+- Distribution plots
+- Correlation analysis
+
+This validation confirmed that features were properly transformed and numerically balanced.
+
+---
+
+# 🔥 Correlation Validation
+
+A correlation matrix was generated on the scaled feature dataset to verify:
+
+- Feature relationships
+- Biomarker dependencies
+- Data consistency after scaling
+
+The analysis confirmed that scaling preserved important healthcare feature relationships.
+
+---
+
+# 📁 Output Files Generated
+
+```text
+data/processed/ckd_scaled.csv
+```
+
+The standardized dataset was exported for the next preprocessing phase involving class balancing and final ML-ready dataset preparation.
+
+---
+
+# 💻 Technologies Used
+
+- Python
+- Pandas
+- Scikit-Learn
+- Matplotlib
+- Seaborn
+
+---
 
 # 🚀 Next Steps
 
 The next phase will focus on:
 
-- Feature Standardization
-- Numerical Scaling
-- Feature Distribution Analysis
-- Correlation Validation
-- ML-ready dataset preparation
+- Class imbalance analysis
+- SMOTE oversampling
+- ML-ready dataset generation
+- Preprocessing artifact export
+- Final machine learning preparation
 
 ---
 
 # 🔐 Professional Notes
 
-- Original healthcare dataset integrity was preserved throughout encoding
-- Feature engineering steps were documented for reproducibility
-- Semantic Git commits were maintained consistently
-- The notebook workflow follows enterprise-grade preprocessing standards
-- Encoded datasets were exported separately to preserve preprocessing stages
+- Target variables were intentionally excluded from scaling
+- Original encoded datasets were preserved separately
+- Standardization was applied only to feature variables
+- Scaled datasets were exported for reproducibility
+- Semantic Git commits and modular preprocessing workflows were maintained consistently
