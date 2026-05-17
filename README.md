@@ -1013,23 +1013,142 @@ The standardized dataset was exported for the next preprocessing phase involving
 - Seaborn
 
 ---
+# 📅 Day 8 — Class Balancing & ML-Ready Dataset Preparation
+
+## 🎯 Objective
+
+The objective of Day 8 was to address class imbalance within the Chronic Kidney Disease (CKD) dataset and finalize a machine learning-ready healthcare dataset suitable for predictive modeling workflows.
+
+This phase focused on balancing disease classes using SMOTE oversampling, validating class distributions, and exporting the finalized dataset for downstream machine learning implementation.
+
+---
+
+# 🛠️ Tasks Completed
+
+✅ Loaded standardized healthcare dataset  
+✅ Separated feature variables and target labels  
+✅ Analyzed CKD class imbalance  
+✅ Applied SMOTE oversampling technique  
+✅ Balanced minority disease class samples  
+✅ Validated resampled class distributions  
+✅ Created finalized ML-ready healthcare dataset  
+✅ Exported preprocessing artifacts for reproducibility  
+
+---
+
+# 📂 Dataset Used
+
+```text
+data/processed/ckd_scaled.csv
+```
+
+The standardized healthcare dataset generated during Day 7 preprocessing was used for class balancing and ML preparation.
+
+---
+
+# ⚠️ Class Imbalance Analysis
+
+Before machine learning implementation, the CKD target variable distribution was analyzed.
+
+### Observation
+
+The dataset exhibited moderate imbalance between:
+
+- CKD Positive Patients
+- Healthy Patients
+
+Class imbalance can negatively affect predictive model performance by biasing models toward the majority class.
+
+---
+
+# 🧠 Why Class Balancing Matters
+
+In healthcare machine learning systems:
+
+❌ Imbalanced datasets can reduce disease detection capability  
+❌ Minority disease cases may be underrepresented  
+❌ Predictive bias may increase false negatives  
+
+This is especially critical in healthcare applications where failing to identify a diseased patient may have severe clinical consequences.
+
+---
+
+# ⚙️ SMOTE Implementation
+
+The Synthetic Minority Oversampling Technique (SMOTE) was implemented to generate synthetic minority class samples and balance the healthcare dataset.
+
+### SMOTE Concept
+
+SMOTE creates synthetic feature samples by interpolating between existing minority class observations.
+
+This improves:
+
+✅ Dataset balance  
+✅ Model fairness  
+✅ Disease prediction sensitivity  
+✅ Minority class representation  
+
+---
+
+# 📊 Class Distribution Validation
+
+Target class distributions were validated:
+
+- Before SMOTE
+- After SMOTE
+
+The balanced dataset confirmed equal representation of CKD-positive and healthy patient samples.
+
+---
+
+# 🔍 ML-Ready Dataset Construction
+
+After balancing:
+
+- Feature variables were reconstructed
+- Target labels were reattached
+- Dataset integrity was validated
+
+This resulted in a fully machine learning compatible healthcare dataset.
+
+---
+
+# 📁 Output Files Generated
+
+```text
+data/processed/ckd_ml_ready.csv
+models/standard_scaler.pkl
+```
+
+The finalized ML-ready dataset and preprocessing artifacts were exported for downstream model training and deployment workflows.
+
+---
+
+# 💻 Technologies Used
+
+- Python
+- Pandas
+- Scikit-Learn
+- Imbalanced-Learn (SMOTE)
+
+---
 
 # 🚀 Next Steps
 
-The next phase will focus on:
+The next project phase will focus on:
 
-- Class imbalance analysis
-- SMOTE oversampling
-- ML-ready dataset generation
-- Preprocessing artifact export
-- Final machine learning preparation
+- Train-test splitting
+- Logistic Regression implementation
+- Random Forest modeling
+- Model training workflows
+- Initial healthcare prediction evaluation
 
 ---
 
 # 🔐 Professional Notes
 
-- Target variables were intentionally excluded from scaling
-- Original encoded datasets were preserved separately
-- Standardization was applied only to feature variables
-- Scaled datasets were exported for reproducibility
+- SMOTE was applied only to training-ready feature variables
+- Original datasets were preserved separately for reproducibility
+- Preprocessing artifacts were exported for deployment consistency
+- Healthcare class balancing decisions were documented for transparency
 - Semantic Git commits and modular preprocessing workflows were maintained consistently
