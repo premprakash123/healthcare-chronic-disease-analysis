@@ -1133,22 +1133,173 @@ The finalized ML-ready dataset and preprocessing artifacts were exported for dow
 
 ---
 
+# 📅 Day 9 — Baseline Model Building Using Logistic Regression
+
+## 🎯 Objective
+
+The objective of Day 9 was to begin the machine learning modeling phase by implementing a baseline Logistic Regression classifier for Chronic Kidney Disease (CKD) prediction.
+
+This phase focused on preparing the ML-ready dataset for supervised learning, performing train-test splitting, generating baseline predictions, and evaluating initial model performance.
+
+---
+
+# 🛠️ Tasks Completed
+
+✅ Loaded ML-ready healthcare dataset  
+✅ Verified dataset structure and class distribution  
+✅ Separated feature variables and target labels  
+✅ Performed train-test split using stratification  
+✅ Implemented Logistic Regression classifier  
+✅ Trained baseline machine learning model  
+✅ Generated patient predictions  
+✅ Evaluated baseline classification performance  
+✅ Created confusion matrix visualization  
+✅ Exported baseline evaluation results  
+
+---
+
+# 📂 Dataset Used
+
+```text
+data/processed/ckd_ml_ready.csv
+```
+
+The ML-ready dataset generated during feature engineering and preprocessing workflows was used for baseline model training.
+
+---
+
+# 🤖 Machine Learning Approach
+
+## Baseline Classifier
+
+Logistic Regression was selected as the baseline machine learning algorithm because it is:
+
+- Interpretable
+- Computationally efficient
+- Suitable for binary classification
+- Commonly used in healthcare prediction systems
+
+The model was trained to classify:
+
+```text
+CKD Positive Patients
+vs
+Healthy Patients
+```
+
+---
+
+# 🔀 Train-Test Split Strategy
+
+The healthcare dataset was divided into:
+
+- Training Dataset → 80%
+- Testing Dataset → 20%
+
+Stratification was applied to preserve class balance across CKD-positive and healthy patient groups.
+
+---
+
+# 📊 Dataset Validation
+
+The following validation checks were performed before model training:
+
+✅ Dataset shape verification  
+✅ Feature-target separation  
+✅ Class distribution analysis  
+✅ Training/testing size validation  
+
+---
+
+# 🧠 Model Training
+
+A Logistic Regression classifier was initialized and trained using the healthcare biomarker dataset.
+
+### Model Workflow
+
+```text
+ML-ready Dataset
+↓
+Train-Test Split
+↓
+Model Training
+↓
+Predictions
+↓
+Evaluation
+```
+
+---
+
+# 🔍 Initial Predictions
+
+The trained baseline model generated predictions on unseen patient records from the testing dataset.
+
+This simulated real-world healthcare classification scenarios where the model predicts whether a patient is likely to have Chronic Kidney Disease.
+
+---
+
+# 📈 Baseline Model Evaluation
+
+The Logistic Regression classifier was evaluated using:
+
+- Accuracy Score
+- Classification Report
+- Confusion Matrix
+
+These metrics provided insight into the model’s ability to correctly identify CKD-positive and healthy patients.
+
+---
+
+# 🔥 Confusion Matrix Analysis
+
+A confusion matrix visualization was generated to analyze:
+
+- True Positives
+- True Negatives
+- False Positives
+- False Negatives
+
+This evaluation is particularly important in healthcare machine learning because false negative predictions may delay clinical intervention.
+
+---
+
+# 📁 Output Files Generated
+
+```text
+reports/logistic_regression_baseline_results.csv
+```
+
+The baseline model evaluation results were exported for future model comparison and optimization workflows.
+
+---
+
+# 💻 Technologies Used
+
+- Python
+- Pandas
+- Scikit-Learn
+- Matplotlib
+- Seaborn
+
+---
+
 # 🚀 Next Steps
 
-The next project phase will focus on:
+The next modeling phase will focus on:
 
-- Train-test splitting
-- Logistic Regression implementation
-- Random Forest modeling
-- Model training workflows
-- Initial healthcare prediction evaluation
+- Decision Tree Classifier
+- Random Forest Classifier
+- K-Nearest Neighbors (KNN)
+- Hyperparameter Tuning
+- Advanced Model Comparison
 
 ---
 
 # 🔐 Professional Notes
 
-- SMOTE was applied only to training-ready feature variables
-- Original datasets were preserved separately for reproducibility
-- Preprocessing artifacts were exported for deployment consistency
-- Healthcare class balancing decisions were documented for transparency
-- Semantic Git commits and modular preprocessing workflows were maintained consistently
+- Stratified train-test splitting was applied to preserve class balance
+- The target variable was intentionally excluded from preprocessing transformations
+- Baseline evaluation metrics were documented for future model comparison
+- The workflow remains fully reproducible and modular
+- Semantic Git commits and professional notebook documentation practices were maintained consistently
