@@ -1303,3 +1303,201 @@ The next modeling phase will focus on:
 - Baseline evaluation metrics were documented for future model comparison
 - The workflow remains fully reproducible and modular
 - Semantic Git commits and professional notebook documentation practices were maintained consistently
+
+---
+# 📅 Day 10 — Decision Tree Modeling & Healthcare Classification Analysis
+
+## 🎯 Objective
+
+The objective of Day 10 was to implement and evaluate a Decision Tree classifier for Chronic Kidney Disease (CKD) prediction using the ML-ready healthcare dataset.
+
+This phase focused on supervised learning implementation, healthcare classification analysis, decision boundary visualization, model comparison, and overfitting inspection.
+
+---
+
+# 🛠️ Tasks Completed
+
+✅ Loaded ML-ready healthcare dataset  
+✅ Performed feature-target separation  
+✅ Applied train-test split with stratification  
+✅ Implemented Decision Tree classifier  
+✅ Trained healthcare prediction model  
+✅ Generated predictions on unseen patient data  
+✅ Calculated baseline Decision Tree accuracy  
+✅ Generated classification report  
+✅ Created confusion matrix visualization  
+✅ Visualized Decision Tree structure  
+✅ Compared Decision Tree with Logistic Regression  
+✅ Performed overfitting analysis  
+✅ Exported model comparison results  
+
+---
+
+# 📂 Dataset Used
+
+```text
+data/processed/ckd_ml_ready.csv
+```
+
+The ML-ready healthcare dataset generated during preprocessing and feature engineering workflows was used for predictive modeling.
+
+---
+
+# 🌳 Decision Tree Modeling
+
+A Decision Tree classifier was implemented to model healthcare decision pathways associated with Chronic Kidney Disease prediction.
+
+Decision Trees are effective for healthcare analytics because they:
+
+- Capture non-linear feature relationships
+- Provide interpretable prediction logic
+- Handle complex biomarker interactions
+- Support visual explanation of clinical decision rules
+
+---
+
+# 🔀 Train-Test Split Strategy
+
+The dataset was divided into:
+
+- Training Dataset → 80%
+- Testing Dataset → 20%
+
+Stratification was applied to preserve CKD class balance across training and testing datasets.
+
+This ensured stable and unbiased model evaluation.
+
+---
+
+# 📊 Model Training Workflow
+
+The machine learning workflow followed:
+
+```text
+ML-ready Dataset
+↓
+Feature-Target Separation
+↓
+Train-Test Split
+↓
+Decision Tree Training
+↓
+Predictions
+↓
+Evaluation
+```
+
+---
+
+# 🔍 Initial Predictions
+
+The trained Decision Tree classifier generated predictions on unseen patient records from the testing dataset.
+
+This simulated real-world healthcare classification scenarios where the system predicts whether a patient is likely to develop Chronic Kidney Disease.
+
+---
+
+# 📈 Model Evaluation
+
+The Decision Tree classifier was evaluated using:
+
+- Accuracy Score
+- Classification Report
+- Confusion Matrix
+
+These evaluation metrics helped assess the model’s ability to correctly classify:
+
+- CKD-positive patients
+- Healthy patients
+
+---
+
+# 🔥 Confusion Matrix Analysis
+
+A confusion matrix visualization was generated to analyze:
+
+- True Positives
+- True Negatives
+- False Positives
+- False Negatives
+
+This analysis is critical in healthcare machine learning because false negative predictions may delay medical intervention for high-risk patients.
+
+---
+
+# 🌲 Decision Tree Visualization
+
+The complete Decision Tree structure was visualized to inspect:
+
+- Biomarker splitting conditions
+- Clinical decision boundaries
+- Feature selection pathways
+- Healthcare classification logic
+
+This improved model interpretability and explainability.
+
+---
+
+# ⚠️ Overfitting Analysis
+
+Training and testing accuracies were compared to evaluate model generalization capability.
+
+### Important Observation
+
+If training accuracy becomes significantly higher than testing accuracy, the model may be overfitting the healthcare dataset by memorizing patterns rather than learning generalized clinical relationships.
+
+---
+
+# 📉 Model Comparison
+
+The Decision Tree classifier was compared with the baseline Logistic Regression model to evaluate:
+
+- Prediction performance
+- Classification stability
+- Healthcare decision complexity
+- Accuracy differences
+
+This comparison established benchmarking for future advanced models.
+
+---
+
+# 📁 Output Files Generated
+
+```text
+reports/decision_tree_results.csv
+```
+
+The evaluation and comparison results were exported for future model benchmarking and reporting workflows.
+
+---
+
+# 💻 Technologies Used
+
+- Python
+- Pandas
+- Scikit-Learn
+- Matplotlib
+- Seaborn
+
+---
+
+# 🚀 Next Steps
+
+The next machine learning phase will focus on:
+
+- Random Forest Classifier
+- K-Nearest Neighbors (KNN)
+- Hyperparameter Tuning
+- ROC-AUC Evaluation
+- Advanced Healthcare Model Comparison
+
+---
+
+# 🔐 Professional Notes
+
+- Stratified splitting preserved CKD class balance
+- Decision Tree visualization improved healthcare model interpretability
+- Overfitting analysis was performed using train-test accuracy comparison
+- Baseline benchmarking against Logistic Regression was maintained
+- Semantic Git commits and modular notebook workflows were consistently followed
+- Exported evaluation files support reproducible healthcare analytics workflows
