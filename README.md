@@ -1501,3 +1501,223 @@ The next machine learning phase will focus on:
 - Baseline benchmarking against Logistic Regression was maintained
 - Semantic Git commits and modular notebook workflows were consistently followed
 - Exported evaluation files support reproducible healthcare analytics workflows
+
+---
+
+# 📅 Day 11 — Random Forest Modeling & Feature Importance Analysis
+
+## 🎯 Objective
+
+The objective of Day 11 was to implement and evaluate a Random Forest classifier for Chronic Kidney Disease (CKD) prediction using the ML-ready healthcare dataset.
+
+This phase focused on ensemble learning, healthcare biomarker importance analysis, prediction stability evaluation, and comparison with previously implemented machine learning models.
+
+---
+
+# 🛠️ Tasks Completed
+
+✅ Loaded ML-ready healthcare dataset  
+✅ Performed feature-target separation  
+✅ Applied stratified train-test split  
+✅ Implemented Random Forest classifier  
+✅ Trained ensemble healthcare prediction model  
+✅ Generated predictions on unseen patient data  
+✅ Calculated Random Forest classification accuracy  
+✅ Generated classification report  
+✅ Created confusion matrix visualization  
+✅ Evaluated healthcare biomarker importance  
+✅ Visualized top contributing features  
+✅ Analyzed ensemble learning behavior  
+✅ Compared Random Forest with baseline models  
+✅ Exported feature importance and comparison reports  
+
+---
+
+# 📂 Dataset Used
+
+```text
+data/processed/ckd_ml_ready.csv
+```
+
+The ML-ready healthcare dataset generated during preprocessing and feature engineering workflows was used for ensemble machine learning implementation.
+
+---
+
+# 🌲 Random Forest Modeling
+
+A Random Forest classifier was implemented to improve Chronic Kidney Disease prediction performance using ensemble learning techniques.
+
+Random Forest combines multiple Decision Trees to improve:
+
+- Prediction stability
+- Generalization capability
+- Resistance to overfitting
+- Healthcare classification robustness
+
+---
+
+# 🔀 Train-Test Split Strategy
+
+The dataset was divided into:
+
+- Training Dataset → 80%
+- Testing Dataset → 20%
+
+Stratification was applied to preserve CKD class balance across both datasets.
+
+This ensured fair and unbiased healthcare model evaluation.
+
+---
+
+# 📊 Ensemble Learning Workflow
+
+The machine learning workflow followed:
+
+```text
+ML-ready Dataset
+↓
+Feature-Target Separation
+↓
+Train-Test Split
+↓
+Random Forest Training
+↓
+Predictions
+↓
+Evaluation
+↓
+Feature Importance Analysis
+```
+
+---
+
+# 🔍 Initial Predictions
+
+The trained Random Forest classifier generated predictions on unseen patient records from the testing dataset.
+
+This simulated real-world healthcare classification scenarios where the system predicts whether a patient is likely to have Chronic Kidney Disease.
+
+---
+
+# 📈 Model Evaluation
+
+The Random Forest classifier was evaluated using:
+
+- Accuracy Score
+- Classification Report
+- Confusion Matrix
+
+These metrics measured the model’s ability to correctly classify:
+
+- CKD-positive patients
+- Healthy patients
+
+---
+
+# 🔥 Confusion Matrix Analysis
+
+A confusion matrix visualization was generated to analyze:
+
+- True Positives
+- True Negatives
+- False Positives
+- False Negatives
+
+This evaluation is critical in healthcare analytics because false negative predictions may delay medical treatment for high-risk patients.
+
+---
+
+# 🧬 Feature Importance Analysis
+
+Feature importance evaluation was performed to identify the healthcare biomarkers contributing most strongly to CKD prediction.
+
+The Random Forest model automatically assigned importance scores to biomarkers based on their contribution to classification performance.
+
+---
+
+# 📊 Top Biomarker Analysis
+
+Top healthcare biomarkers were visualized using feature importance bar charts.
+
+### Important Observation
+
+Clinical biomarkers such as:
+
+- Serum Creatinine
+- Hemoglobin
+- Blood Pressure
+- Blood Glucose
+
+showed strong contribution to disease prediction performance.
+
+---
+
+# 🌐 Ensemble Learning Analysis
+
+Random Forest improved healthcare classification stability by aggregating predictions from multiple Decision Trees.
+
+### Ensemble Learning Benefits
+
+- Reduced overfitting risk
+- Improved prediction robustness
+- Better generalization capability
+- More stable healthcare predictions
+
+---
+
+# 📉 Model Comparison
+
+The Random Forest classifier was compared with:
+
+- Logistic Regression
+- Decision Tree
+
+to evaluate:
+
+- Accuracy improvements
+- Prediction consistency
+- Healthcare classification reliability
+
+---
+
+# 📁 Output Files Generated
+
+```text
+reports/random_forest_feature_importance.csv
+reports/random_forest_comparison_results.csv
+```
+
+The exported reports support future healthcare model benchmarking and dashboard workflows.
+
+---
+
+# 💻 Technologies Used
+
+- Python
+- Pandas
+- Scikit-Learn
+- Matplotlib
+- Seaborn
+
+---
+
+# 🚀 Next Steps
+
+The next machine learning phase will focus on:
+
+- K-Nearest Neighbors (KNN)
+- Hyperparameter Tuning
+- ROC-AUC Evaluation
+- Advanced Model Comparison
+- Clinical Risk Interpretation
+
+---
+
+# 🔐 Professional Notes
+
+- Stratified train-test splitting preserved CKD class balance
+- Ensemble learning improved healthcare prediction stability
+- Feature importance analysis improved model interpretability
+- Model comparison workflows were maintained consistently
+- Exported reports support reproducible healthcare analytics workflows
+- Semantic Git commits and modular notebook practices were followed throughout the project
