@@ -1721,3 +1721,217 @@ The next machine learning phase will focus on:
 - Model comparison workflows were maintained consistently
 - Exported reports support reproducible healthcare analytics workflows
 - Semantic Git commits and modular notebook practices were followed throughout the project
+
+---
+
+# 📅 Day 12 — K-Nearest Neighbors (KNN) Modeling & Distance-Based Healthcare Classification
+
+## 🎯 Objective
+
+The objective of Day 12 was to implement and evaluate a K-Nearest Neighbors (KNN) classifier for Chronic Kidney Disease (CKD) prediction using the ML-ready healthcare dataset.
+
+This phase focused on distance-based learning, neighborhood analysis, K-value experimentation, healthcare classification performance evaluation, and comparison with previously implemented machine learning models.
+
+---
+
+# 🛠️ Tasks Completed
+
+✅ Loaded ML-ready healthcare dataset  
+✅ Performed feature-target separation  
+✅ Applied stratified train-test split  
+✅ Implemented K-Nearest Neighbors (KNN) classifier  
+✅ Trained distance-based healthcare prediction model  
+✅ Generated predictions on unseen patient data  
+✅ Calculated KNN classification accuracy  
+✅ Generated classification report  
+✅ Created confusion matrix visualization  
+✅ Experimented with multiple K values  
+✅ Analyzed neighborhood-based learning behavior  
+✅ Visualized K-value accuracy trends  
+✅ Compared KNN with baseline machine learning models  
+✅ Exported KNN evaluation and K-value analysis reports  
+
+---
+
+# 📂 Dataset Used
+
+```text
+data/processed/ckd_ml_ready.csv
+```
+
+The ML-ready healthcare dataset generated during preprocessing and feature engineering workflows was used for distance-based machine learning implementation.
+
+---
+
+# 🤝 K-Nearest Neighbors (KNN) Modeling
+
+A K-Nearest Neighbors (KNN) classifier was implemented to classify healthcare records based on similarity with neighboring patient observations.
+
+KNN is a distance-based machine learning algorithm that predicts patient classes using nearby data points in feature space.
+
+---
+
+# 🔀 Train-Test Split Strategy
+
+The dataset was divided into:
+
+- Training Dataset → 80%
+- Testing Dataset → 20%
+
+Stratification was applied to preserve CKD class balance across both datasets.
+
+This ensured stable and unbiased healthcare model evaluation.
+
+---
+
+# 📊 Distance-Based Learning Workflow
+
+The machine learning workflow followed:
+
+```text
+ML-ready Dataset
+↓
+Feature-Target Separation
+↓
+Train-Test Split
+↓
+KNN Training
+↓
+Predictions
+↓
+Evaluation
+↓
+K-Value Analysis
+```
+
+---
+
+# 🔍 Initial Predictions
+
+The trained KNN classifier generated predictions on unseen patient records from the testing dataset.
+
+This simulated real-world healthcare prediction scenarios where patient classification is determined using similarity-based learning.
+
+---
+
+# 📈 Model Evaluation
+
+The KNN classifier was evaluated using:
+
+- Accuracy Score
+- Classification Report
+- Confusion Matrix
+
+These metrics measured the model’s ability to correctly classify:
+
+- CKD-positive patients
+- Healthy patients
+
+---
+
+# 🔥 Confusion Matrix Analysis
+
+A confusion matrix visualization was generated to analyze:
+
+- True Positives
+- True Negatives
+- False Positives
+- False Negatives
+
+This evaluation is critical in healthcare analytics because false negative predictions may delay diagnosis and medical intervention.
+
+---
+
+# 🔢 K-Value Experimentation
+
+Different K values were tested to evaluate how neighborhood size impacts healthcare classification performance.
+
+### Purpose
+
+K-value experimentation helped analyze:
+
+- Prediction stability
+- Model sensitivity
+- Classification robustness
+- Distance-based learning behavior
+
+---
+
+# 📊 K-Value Accuracy Analysis
+
+K-value performance trends were visualized using line plots to identify the most effective neighborhood size for CKD classification.
+
+### Important Observation
+
+Very small K values may increase noise sensitivity, while excessively large K values may oversimplify healthcare decision boundaries.
+
+---
+
+# 🌐 Distance-Based Learning Analysis
+
+KNN classifies healthcare records based on similarity with nearby patient observations in feature space.
+
+### Important Note
+
+Feature scaling performed during preprocessing was especially important because KNN relies heavily on distance calculations between healthcare biomarkers.
+
+---
+
+# 📉 Model Comparison
+
+The KNN classifier was compared with:
+
+- Logistic Regression
+- Decision Tree
+- Random Forest
+
+to evaluate:
+
+- Prediction performance
+- Healthcare classification stability
+- Model generalization capability
+- Distance-based learning effectiveness
+
+---
+
+# 📁 Output Files Generated
+
+```text
+reports/knn_comparison_results.csv
+reports/knn_k_value_analysis.csv
+```
+
+The exported reports support future healthcare model benchmarking and evaluation workflows.
+
+---
+
+# 💻 Technologies Used
+
+- Python
+- Pandas
+- Scikit-Learn
+- Matplotlib
+- Seaborn
+
+---
+
+# 🚀 Next Steps
+
+The next machine learning phase will focus on:
+
+- Hyperparameter Tuning
+- GridSearchCV Optimization
+- ROC-AUC Evaluation
+- Advanced Model Comparison
+- Clinical Risk Interpretation
+
+---
+
+# 🔐 Professional Notes
+
+- Stratified train-test splitting preserved CKD class balance
+- Feature scaling significantly improved KNN performance reliability
+- K-value experimentation improved model optimization understanding
+- Distance-based learning analysis enhanced healthcare interpretability
+- Exported reports support reproducible healthcare analytics workflows
+- Semantic Git commits and modular notebook practices were consistently maintained
