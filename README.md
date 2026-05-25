@@ -2139,3 +2139,204 @@ The next machine learning phase will focus on:
 - Hyperparameter tuning improved generalization capability
 - Optimized models were exported for reproducible healthcare analytics workflows
 - Semantic Git commits and modular notebook workflows were consistently maintained
+
+---
+
+# 📅 Day 14 — Healthcare Model Evaluation & Comparative Performance Analysis
+
+## 🎯 Objective
+
+The objective of Day 14 was to perform comparative evaluation of multiple machine learning models developed for Chronic Kidney Disease (CKD) prediction.
+
+This phase focused on analyzing healthcare model performance using multiple evaluation metrics, comparing prediction reliability, and identifying the most clinically effective classification approach.
+
+---
+
+# 🛠️ Tasks Completed
+
+✅ Created healthcare model comparison framework  
+✅ Compared machine learning accuracy scores  
+✅ Compared precision performance across classifiers  
+✅ Compared recall performance across classifiers  
+✅ Evaluated F1-score performance  
+✅ Generated comparative healthcare evaluation visualizations  
+✅ Created combined metric comparison workflow  
+✅ Transformed evaluation data using DataFrame melting  
+✅ Identified best-performing healthcare prediction model  
+✅ Analyzed clinical importance of recall in CKD prediction  
+✅ Exported healthcare model comparison reports  
+
+---
+
+# 📂 Evaluation Workflow
+
+The following healthcare prediction models were compared:
+
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- K-Nearest Neighbors (KNN)
+- Optimized Random Forest
+
+Each model was evaluated using multiple healthcare-focused classification metrics.
+
+---
+
+# 📊 Evaluation Metrics Used
+
+The comparative analysis focused on:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+
+These metrics were selected because healthcare machine learning systems require more than just high accuracy.
+
+---
+
+# 📈 Accuracy Comparison
+
+Accuracy comparison was performed to evaluate the overall classification capability of each healthcare prediction model.
+
+### Observation
+
+- Logistic Regression and Decision Tree achieved very high classification accuracy
+- Random Forest models demonstrated strong and stable performance
+- KNN performed well but showed slightly lower stability compared to ensemble models
+
+---
+
+# 🎯 Precision Analysis
+
+Precision evaluation measured how accurately CKD-positive predictions were made by each classifier.
+
+### Healthcare Importance
+
+High precision reduces unnecessary concern and medical testing for healthy patients incorrectly classified as CKD-positive.
+
+---
+
+# 🔍 Recall Analysis
+
+Recall comparison was one of the most important healthcare evaluation steps in the project.
+
+### Important Clinical Interpretation
+
+High recall is critical in healthcare analytics because:
+
+```text
+False negative predictions may delay treatment for high-risk CKD patients.
+```
+
+A strong recall score helps ensure that CKD-positive patients are correctly identified.
+
+---
+
+# ⚖️ F1-Score Analysis
+
+F1-score evaluation balanced:
+
+- Precision
+- Recall
+
+This metric helped assess overall healthcare classification reliability across all machine learning models.
+
+---
+
+# 🔄 Combined Metric Comparison
+
+The evaluation workflow used:
+
+```python
+DataFrame.melt()
+```
+
+to transform healthcare evaluation metrics into long-format structure for grouped visualization analysis.
+
+This improved:
+
+- Comparative interpretability
+- Visualization flexibility
+- Metric grouping analysis
+
+---
+
+# 📊 Comparative Visualization Analysis
+
+Multiple evaluation visualizations were generated to compare:
+
+- Accuracy trends
+- Precision trends
+- Recall trends
+- F1-score performance
+
+across all healthcare machine learning models.
+
+---
+
+# 🏆 Best Performing Healthcare Model
+
+The optimized Random Forest classifier demonstrated the most balanced healthcare classification performance because it combined:
+
+- High accuracy
+- Strong recall
+- Stable ensemble learning behavior
+- Reduced overfitting risk
+
+---
+
+# 🧪 Clinical Reliability Discussion
+
+Although the healthcare models achieved very high evaluation scores, machine learning predictions remain probabilistic and may still generate:
+
+- False positives
+- False negatives
+
+### Important Healthcare Consideration
+
+False negatives are especially critical because missed CKD-positive patients may experience delayed diagnosis and treatment.
+
+---
+
+# 📁 Output Files Generated
+
+```text
+../reports/model_comparison_results.csv
+../reports/model_metric_comparison.csv
+```
+
+The exported reports support future healthcare dashboarding and executive reporting workflows.
+
+---
+
+# 💻 Technologies Used
+
+- Python
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+
+---
+
+# 🚀 Next Steps
+
+The next phase of the project will focus on:
+
+- ROC Curve Analysis
+- ROC-AUC Evaluation
+- Clinical Risk Visualization
+- Power BI Dashboard Integration
+- Executive Healthcare Reporting
+
+---
+
+# 🔐 Professional Notes
+
+- Multiple healthcare evaluation metrics were analyzed instead of relying only on accuracy
+- Recall interpretation was prioritized due to clinical importance
+- Ensemble learning models demonstrated stronger prediction stability
+- Comparative visualization workflows improved healthcare interpretability
+- Exported evaluation reports support reproducible healthcare analytics workflows
+- Semantic Git commits and modular notebook practices were consistently maintained
