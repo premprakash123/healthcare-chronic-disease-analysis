@@ -2878,6 +2878,30 @@ The exported reports support future healthcare dashboarding and executive analyt
 
 ---
 
+# Day 16 - Data Leakage Fix and Model Revalidation
+
+## Tasks Completed
+
+* Investigated unexpectedly high model performance.
+* Identified `id` column present in the ML-ready dataset.
+* Removed identifier feature before final dataset export.
+* Regenerated `ckd_ml_ready.csv`.
+* Retrained all machine learning models.
+* Updated evaluation workflow to ensure feature consistency.
+* Revalidated model performance after removing data leakage risk.
+
+## Key Findings
+
+* The `id` column was unintentionally included in the training dataset.
+* This could have introduced data leakage and inflated model performance.
+* After removing the identifier feature, model results became more realistic and reliable.
+* Random Forest remained the best-performing model with strong predictive performance.
+
+## Outcome
+
+The project now uses only clinically relevant features for CKD prediction, improving model reliability and ensuring a more trustworthy evaluation process.
+
+
 # 🚀 Next Steps
 
 The next phase of the project will focus on:
