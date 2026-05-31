@@ -3075,3 +3075,104 @@ These reports support future dashboard development, healthcare reporting, and ex
 # ✅ Outcome
 
 Successfully completed Recall Analysis, Sensitivity Evaluation, False Negative Assessment, and Clinical Risk Analysis for the optimized CKD prediction model. The healthcare model demonstrated strong disease detection capability and low-risk clinical performance, making it suitable for CKD screening and healthcare analytics workflows.
+
+---
+
+# Day 20 — Power BI Dashboard Preparation 📊
+
+## 🎯 Objective
+
+Prepare the final CKD dataset and supporting reports for Power BI dashboard development.
+
+---
+
+## ✅ Tasks Completed
+
+### 📁 Dashboard Dataset Export
+
+* Loaded the final ML-ready CKD dataset.
+* Exported a dedicated dataset for Power BI reporting.
+* Verified dataset structure and class distribution.
+
+### 📌 KPI Definition
+
+Prepared key healthcare KPIs for dashboard cards:
+
+* Total Patients
+* CKD Patients
+* Non-CKD Patients
+* CKD Percentage
+
+### 🧬 Biomarker Analysis Preparation
+
+Generated summary statistics for important clinical indicators:
+
+* Age
+* Blood Pressure (BP)
+* Specific Gravity (SG)
+* Albumin (AL)
+* Blood Glucose Random (BGR)
+* Blood Urea (BU)
+* Serum Creatinine (SC)
+* Hemoglobin (HEMO)
+
+### 🤖 Model Performance Reporting
+
+Prepared model comparison dataset including:
+
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+
+for:
+
+* Logistic Regression
+* Decision Tree
+* Random Forest
+* KNN
+* Optimized Random Forest
+
+### 📤 Report Exports
+
+Generated Power BI-ready files:
+
+* dashboard_dataset.csv
+* kpi_summary.csv
+* biomarker_summary.csv
+* model_performance.csv
+
+---
+
+## 📈 Dashboard Design Plan
+
+### Page 1 — CKD Overview
+
+* KPI Cards
+* CKD vs Non-CKD Distribution
+* Patient Summary
+
+### Page 2 — Biomarker Analysis
+
+* Biomarker Comparison
+* Clinical Indicator Insights
+* CKD Risk Factors
+
+### Page 3 — Model Performance
+
+* Accuracy Comparison
+* Recall Comparison
+* Clinical Evaluation Summary
+
+---
+
+## 💡 Key Learning
+
+Learned how to transform machine learning outputs into business-friendly reporting datasets that can be directly consumed by Power BI dashboards.
+
+---
+
+## 🚀 Outcome
+
+Successfully prepared all datasets, KPI summaries, biomarker reports, and model performance reports required for the final Power BI dashboard implementation.
+
