@@ -25,7 +25,7 @@ The project includes:
 # 🎯 Objectives
 
 ✅ Identify high-risk patients  
-✅ Analyze important medical biomarkers  
+✅ Analyze important medical biomarkers 
 ✅ Build predictive healthcare models  
 ✅ Generate actionable healthcare insights 
 
