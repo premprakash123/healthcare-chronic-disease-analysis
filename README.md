@@ -27,7 +27,7 @@ The project includes:
 ✅ Identify high-risk patients  
 ✅ Analyze important medical biomarkers  
 ✅ Build predictive healthcare models  
-✅ Generate actionable healthcare insights  
+✅ Generate actionable healthcare insights 
 
 ---
 
