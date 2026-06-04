@@ -3184,3 +3184,82 @@ Learned how to transform machine learning outputs into business-friendly reporti
 
 Successfully prepared all datasets, KPI summaries, biomarker reports, and model performance reports required for the final Power BI dashboard implementation.
 
+---
+
+# DAY 21 — Dataset Validation & Clinical Data Recovery
+
+## Objectives
+
+* Investigate unexpected scaled values in dashboard dataset
+* Trace dataset lineage across notebooks
+* Recover original clinical values dataset
+* Prepare dashboard-ready healthcare dataset
+
+## Tasks Completed
+
+### Dataset Investigation
+
+* Identified inconsistency between cleaned dataset and dashboard dataset
+* Verified that ML-ready dataset contained standardized features
+* Traced issue through Data Cleaning, Feature Engineering, and Model Building notebooks
+
+### Clinical Data Recovery
+
+* Revisited original cleaned dataset (`ckd_clean_initial.csv`)
+* Confirmed availability of real clinical values:
+
+  * Age
+  * Blood Pressure
+  * Specific Gravity
+  * Hemoglobin
+  * Serum Creatinine
+  * Blood Glucose
+  * Other clinical biomarkers
+
+### Data Quality Checks
+
+* Detected unnecessary columns:
+
+  * `id`
+  * `Unnamed: 26`
+* Removed non-business relevant fields for dashboarding
+
+### Class Label Validation
+
+* Identified incorrect class value (`no`)
+* Investigated affected record
+* Corrected class label inconsistency
+* Verified final class distribution:
+
+  * CKD: 250
+  * Non-CKD: 150
+
+### Dashboard Dataset Creation
+
+* Generated clean clinical dataset for reporting
+* Exported:
+
+  * `dashboard_dataset_real.csv`
+* Preserved original healthcare measurements instead of scaled values
+
+## Key Learnings
+
+* ML datasets and dashboard datasets should be maintained separately
+* Standardized features improve model training but reduce business interpretability
+* Dataset validation is essential before reporting and visualization
+* Minor label inconsistencies can impact downstream analytics
+
+## Deliverables
+
+* Clean clinical dataset recovered
+* Class labels validated
+* Dashboard-ready dataset exported
+* Data quality issues resolved
+
+## Next Steps
+
+* Import recovered clinical dataset into Power BI
+* Create KPI cards
+* Build healthcare analytics dashboard
+* Develop biomarker and risk analysis visuals
+
