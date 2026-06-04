@@ -1,3 +1,11 @@
+## Dashboard Preview
+
+![CKD Dashboard](dashboard/dashboard_images/Patient_dashboard.png)
+
+### Interactive Dashboard File
+
+- Power BI Dashboard: `dashboard/powerbi/CKD_Dashboard.pbix`
+  
 # 🏥 Healthcare Chronic Disease Prediction & EHR Analysis
 
 ## 📌 Project Overview
