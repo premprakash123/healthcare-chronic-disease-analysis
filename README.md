@@ -274,7 +274,7 @@ healthcare-chronic-disease-analysis/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/healthcare-chronic-disease-analysis.git
+git clone https://github.com/premprakash123/healthcare-chronic-disease-analysis.git
 ```
 
 ### 2. Navigate to Project Directory
